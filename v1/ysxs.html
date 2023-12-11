@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>有声小说播放器</title>
+</head>
+<body>
+	<h3>有声小说播放器</h3>
+	<!--
+	id="ysxs-player" 元素标识
+	ysxs-alist-url="http://wsd.myds.me:5244" ALIST基础网址
+	ysxs-album-path="/本机/有声小说/玄幻武侠/通天之路[刘忙]" 专辑路径
+	ysxs-album-password="ysxs" 专辑密码，轨道和封面和封面都基于该密码
+	ysxs-album-name="通天之路" 专辑名称
+	ysxs-artist-name="刘忙" 主播名称
+	ysxs-cover-path="/cover.png" 封面路径
+	ysxs-track-path="/track/0001-0500|/track/0501-0794" 轨道路径，多个可使用 | 分割 
+	ysxs-track-number="(.+)\..+" 音轨编号，按正则表达式从文件名取
+	ysxs-track-name="(.+)\..+" 音轨名称，按正则表达式从文件名取
+	ysxs-player-fixed="0" 播放器是否开启吸底模式
+	ysxs-player-list-folded="1" 播放器列表是否默认折叠
+	ysxs-player-list-max-height="300px" 播放器列表最大高度
+	ysxs-debug="1" 是否为调试模式
+	-->
+	<div
+		id="ysxs-player"
+		ysxs-alist-url="http://wsd.myds.me:5244"
+		ysxs-album-path="/本机/有声小说/玄幻武侠/通天之路[刘忙]"
+		ysxs-album-password="ysxs"
+		ysxs-album-name="通天之路"
+		ysxs-artist-name="刘忙"
+		ysxs-cover-path="/cover.png"
+		ysxs-track-path="/track/0001-0500|/track/0501-0794"
+		ysxs-track-number="[0-9]*"
+		ysxs-track-name="[1-9][0-9]*"
+		ysxs-player-fixed="0"
+		ysxs-player-list-folded="1"
+		ysxs-player-list-max-height="300px"
+		ysxs-debug="1"
+	></div>
+	<script src="ysxs.js" type="module"></script>
+</body>
+</html>
